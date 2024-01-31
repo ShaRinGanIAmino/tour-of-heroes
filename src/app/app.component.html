@@ -1,3 +1,11 @@
-<h1>{{ title }}</h1>
-<app-heroes></app-heroes>
+<div class="flex justify-between items-center p-9 shadow-md mb-20 px-28">
+  <h1>{{ title }}</h1>
+  <nav
+    class="flex gap-12 justify-center items-center font-medium pl-2 text-purple-700"
+  >
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+  </nav>
+</div>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

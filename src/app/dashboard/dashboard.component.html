@@ -1,0 +1,12 @@
+<div class="flex flex-col items-center justify-center">
+  <h2 class="text-center font-medium text-purple-900 text-3xl">Top Heroes</h2>
+  <div class="flex gap-2 p-8 flex-wrap">
+    <a
+      *ngFor="let hero of heroes"
+      class="p-5 flex flex-col justify-between items-center text-center w-[200px] gap-4 h-[200px] border-2 rounded-sm bg-purple-800 text-white"
+    >
+      {{ hero.name }}
+      <p>{{ hero.attack }}</p>
+    </a>
+  </div>
+</div>
